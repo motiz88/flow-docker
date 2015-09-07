@@ -1,7 +1,7 @@
 # flow-docker
 Dockerfiles for Facebook's [Flow](http://flowtype.org) type checker.
 
-While we all wait for [official Windows binaries](https://github.com/facebook/flow/issues/6), I have been happily running the latest Flow (0.11.0) on Windows using this [Docker](http://docker.io) image.
+While we all wait for [official Windows binaries](https://github.com/facebook/flow/issues/6), you can run the latest Flow on Windows using this [Docker](http://docker.io) image.
 
 ## Basic usage
 The image has Flow preinstalled and in the PATH, so just mount your JavaScript at `/app` on a fresh container, start a Bash session inside it, and `flow init`, `flow start`, `flow check` should etc work normally:
