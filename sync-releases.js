@@ -35,7 +35,7 @@ function getReleases(cb) {
 }
 
 function isUsableRelease(release) {
-    return !release.draft && release.name !== '' && release.tag_name !== '' && !release.prerelease;
+    return !release.draft && release.tag_name !== '' && !release.prerelease;
 }
 
 function isUsableAsset(asset) {
@@ -76,8 +76,8 @@ getReleases(function(err, releases) {
             if (assets.length < 1)
                 return;
             var dockerfileSource = getDockerfileSourceForAsset(assets[0]);
-            
-            var outputDir = release.name;
+
+            var outputDir = release.tag_name;
             try {
             	fs.mkdirSync(outputDir);
             }
