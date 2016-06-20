@@ -13,4 +13,4 @@ $> docker run --rm -it -v /home/moti/projects/myapp:/app motiz88/flow bash
 If you'd rather not keep a dedicated Bash window open, it should also be possible to, say, run the container in the background and `docker exec <container_id> flow` into it as needed.
 
 ## More information
-This GitHub repo is built automatically as [motiz88/flow](https://registry.hub.docker.com/r/motiz88/flow) on Docker Hub. More instructions for use are available there.
+This GitHub repo is built automatically as [motiz88/flow](https://hub.docker.com/r/motiz88/flow/) on Docker Hub. More instructions for use are available there.
